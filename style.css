@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rock+Salt&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #C3ADE4;
+    --cor2: #493985;
+    --cor3: #492AB8;
+    --cor4: #3F0FEA;
+    --cor5: #1B1B1C;
+
+    --font-destaque: 'rock salt', cursive;
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-image: linear-gradient(var(--cor1), var(--cor4));
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    color: #ffffff;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    display: inline-block;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.259);
+}
+
+header > button {
+    min-width: 100px;
+    min-height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: var(--cor5);
+    color: var(--cor1)
+}
+
+header > button:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--cor5);
+}
+
+main h1 {
+    color: #fff;
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    margin-left: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.247);
+}
+
+main h2 {
+    font-family: var(--font-destaque);
+    font-size: 1.2em;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    margin-top: 10px;
+    text-indent: 20px;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.293);
+}
+
+main p {
+    color: var(--cor3);
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: 15px;
+}
+
+main .documento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.texto {
+    margin-right: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.texto:hover {
+    transform: translateX(30px);
+    transition: 2s;
+}
+
+.texto strong {
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+    color: var(--cor4);
+    border-radius: 5px;
+}
+
+main > img {
+    max-width: 100%;
+}
+
+.perfil {
+    max-width: 100%;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.perfil:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+.download {
+    max-width: 100%;
+    margin: 30px;
+    padding: 20px;
+
+}
+
+.download > button {
+    min-width: 100px;
+    min-height: 30px;
+    padding: 10px;
+    border: var(--cor3) solid;
+    border-radius: 100px;
+    background-color: var(--cor3);
+}
+
+.download > button:hover {
+    background-color: #fff;
+    border: #fff;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.download > button > a {
+    font-family: var(--font-destaque);
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.download > button > a:hover {
+    color: var(--cor3);
+}
+
+
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px;
+    flex: 1 1 200px;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    padding: 30px;
+    display: inline-block;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
+}
+
+.card:hover {
+    transform: scale(1.3);
+    transition: 0.3;
+}
+
+.redes {
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    margin-top: auto;
+}
+
+a > strong {
+    margin-left: 5px;
+}
+
+.redes:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
