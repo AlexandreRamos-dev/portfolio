@@ -40,18 +40,15 @@ header > h1 {
 }
 
 header > button {
-    min-width: 100px;
+    min-width: 80px;
     min-height: 30px;
     margin-right: 10px;
     border-radius: 20px;
     padding: 10px;
     background-color: var(--cor5);
-    color: var(--cor1)
 }
 
 header > button:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
